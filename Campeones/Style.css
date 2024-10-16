@@ -1,0 +1,117 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #E0E0E0; /* Texto claro */
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centramos el texto */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
+}
+
+/* Encabezados */
+h1, h2, h4 {
+    color: #FFD700; /* Dorado vibrante para los títulos */
+    font-size: 3vw; /* Título escalable con el ancho de la pantalla */
+    line-height: 1.2;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de la lista */
+    list-style: none;
+    margin: 5vh 0; /* Márgenes proporcionales al alto de la pantalla */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 2vw; /* Espaciado entre elementos de la lista basado en el ancho de la pantalla */
+}
+
+nav ul li a {
+    color: #0077FF; /* Color azul para los enlaces */
+    text-decoration: none;
+    padding: 1vh 2vw; /* Padding usando unidades proporcionales a la altura y el ancho de la pantalla */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.8vw;
+}
+
+nav ul li a:hover {
+    background-color: #FF4500; /* Fondo naranja al pasar el mouse */
+    color: #FFFFFF; /* Texto blanco al hacer hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Sección de contenido */
+section {
+    margin-bottom: 5vh; /* Espacio al final de cada sección basado en el alto de la pantalla */
+}
+
+/* Contenedor de iconos */
+.gridIconos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr)); /* Coloca la mayor cantidad posible por fila */
+    gap: 0.3rem; /* Espacio entre los elementos */
+    margin: 0; /* Espacio alrededor del grid */
+    justify-items: center; /* Centra los íconos dentro de sus celdas */
+}
+
+/* Estilo de los elementos dentro del grid */
+.grid-item {
+    background-color: #1C1C1C; /* Fondo oscuro para los elementos */
+    padding: 1vh; /* Padding interno reducido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar un poco de profundidad */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+    text-align: center; /* Centra el contenido dentro del item */
+}
+
+/* Estilo de las imágenes dentro del grid */
+.grid-item img {
+    width: 2rem; /* Ajustar el tamaño de las imágenes con rem */
+    height: 2rem; /* Mantiene la relación de aspecto */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    border-bottom-style:none ;
+}
+
+.grid-item p {
+    margin-top: 0.5vh; /* Espacio entre la imagen y el nombre */
+    font-weight: bold; /* Negrita para el nombre del campeón */
+    font-size: 1.2rem; /* Tamaño de texto adaptable */
+}
+
+.grid-item:hover {
+   background-color: #FFD700 ;
+   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.ImgText{
+    flex-direction: row ;
+    display: flex;
+    width: 50em;
+    height: 20em;
+    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
+}
+.splashArt{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding-top: 5em;
+}
