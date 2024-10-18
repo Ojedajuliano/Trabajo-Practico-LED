@@ -74,6 +74,7 @@ nav ul li a:hover {
 }
 
 
+
 /* Sección de contenido */
 section {
     margin-bottom: 5vh; /* Espacio al final de cada sección basado en el alto de la pantalla */
@@ -120,3 +121,8 @@ p {
     
 }
 
+.miNombre{
+    display: flex;
+    margin-top: 20%;
+    padding-top: 20%;
+}
