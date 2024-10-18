@@ -41,7 +41,6 @@ h4 {
     font-size: 1.5vw;
 }
 
-
 /* Navegación */
 nav ul {
     display: flex;
@@ -121,49 +120,3 @@ p {
     
 }
 
-.line-container{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 20rem;
-    justify-content: space-around;
-    margin: 9rem 5rem;
-}
-.descImg{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-.map{
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.campeonImg {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    width: 70% ;
-    height:100%;
-    margin-left: 20%;
-    padding-top: 2rem;
-
-}
-.campeonImg img{
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-.campeonImg img:hover{
-    cursor: crosshair;
-    width: 4rem;
-    height: 100%;
-    opacity:  1;
-    filter: contrast(120%);
-}
