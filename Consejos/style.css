@@ -1,0 +1,163 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #E0E0E0; /* Texto claro */
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centramos el texto */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la pantalla */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Usamos un 90% del ancho de la pantalla */
+    max-width: 900px; /* Para pantallas grandes, no pasamos los 900px */
+    margin: 5vh auto; /* Márgenes verticales de 5% de la altura de la pantalla */
+    padding: 2rem; /* Padding en unidades de rem, que escala con el tamaño de fuente */
+    background-color: #1C1C1C; /* Fondo de las secciones */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Encabezados */
+h1, h2, h4 {
+    color: #FFD700; /* Dorado vibrante para los títulos */
+    font-size: 3vw; /* Título escalable con el ancho de la pantalla */
+    line-height: 1.2;
+}
+
+/* Títulos secundarios */
+h2 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de la lista */
+    list-style: none;
+    margin: 5vh 0; /* Márgenes proporcionales al alto de la pantalla */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 2vw; /* Espaciado entre elementos de la lista basado en el ancho de la pantalla */
+}
+
+
+nav ul li a {
+    color: #0077FF; /* Color azul para los enlaces */
+    text-decoration: none;
+    padding: 1vh 2vw; /* Padding usando unidades proporcionales a la altura y el ancho de la pantalla */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.8vw;
+}
+
+nav ul li a:hover {
+    background-color: #FF4500; /* Fondo naranja al pasar el mouse */
+    color: #FFFFFF; /* Texto blanco al hacer hover */
+}
+nav ul li a:hover {
+    background-color: #FF4500;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+/* Sección de contenido */
+section {
+    margin-bottom: 5vh; /* Espacio al final de cada sección basado en el alto de la pantalla */
+}
+
+/* Estilo de listas dentro de las secciones */
+ul {
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-top: 2vh;
+    padding-left: 5vw; /* Padding a la izquierda basado en el ancho de la pantalla */
+}
+
+li {
+    margin-bottom: 3vh; /* Espaciado entre elementos en base al alto de la pantalla */
+    font-size: 1.8vw; /* Tamaño de texto proporcional al ancho de la pantalla */
+    list-style-type: none;
+}
+
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    font-size: 2vw; /* Texto escalable con el ancho de la pantalla */
+}
+
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 3vh; /* Espacio entre los elementos */
+    margin: 5vh 0; /* Espacio alrededor del grid */
+}
+
+/* Aseguramos que los elementos dentro del grid tengan un buen espaciado y tamaño */
+.list-container div {
+    background-color: #1C1C1C; /* Fondo oscuro para los elementos */
+    padding: 2vh 2vw; /* Padding interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar un poco de profundidad */
+    font-size: 1.8vw; /* Tamaño de texto adaptable */
+}
+.list-container h4{
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    
+}
+.acb-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.acb-container {
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 20px;
+    justify-content: space-around;
+}
+.acb-container li{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.pjsection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divPj{
+    display: flex;
+    width: 50%;
+    padding: 2rem 3rem;
+    flex-direction: column;
+    
+}
+.divPj p{
+text-shadow: #121212;
+font-size: 7px;
+background-color: #1c1c1c9b;
+border-radius: 12%;
+display: flex;
+
+}
+.carousel-caption d-none d-md-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
