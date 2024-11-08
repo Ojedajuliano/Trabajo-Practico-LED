@@ -56,16 +56,17 @@ section {
 /* Contenedor de iconos */
 .gridIconos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr)); /* Coloca la mayor cantidad posible por fila */
-    gap: 0.3rem; /* Espacio entre los elementos */
+    grid-template-columns: repeat(auto-fill, minmax(3rem, 2fr)); /* Coloca la mayor cantidad posible por fila */
+    gap: .5rem; /* Espacio entre los elementos */
     margin: 0; /* Espacio alrededor del grid */
-    justify-items: center; /* Centra los íconos dentro de sus celdas */
+    justify-items: center;
+    ; /* Centra los íconos dentro de sus celdas */
 }
 
 /* Estilo de los elementos dentro del grid */
 .grid-item {
     background-color: #1C1C1C; /* Fondo oscuro para los elementos */
-    padding: 1vh; /* Padding interno reducido */
+    padding: .5vh; /* Padding interno reducido */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar un poco de profundidad */
     cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
@@ -96,8 +97,8 @@ section {
 .ImgText{
     flex-direction: row ;
     display: flex;
-    width: 50em;
-    height: 20em;
+    width: 100%;
+    height: 100%;
     justify-content: space-around;
     text-align: center;
     justify-content: center;

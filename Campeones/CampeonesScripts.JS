@@ -185,7 +185,7 @@ function mostrarCampeon(campeon) {
 }
 
 function cargarCampeonesDesdeJson(campeon) {
-  fetch('/Trabajo Practico LED/Dragontails/14.20.1/data/es_AR/championFull.json')
+  fetch('championFull.json')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Error al cargar el archivo JSON');
